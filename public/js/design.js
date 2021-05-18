@@ -1,6 +1,4 @@
-
-
-/* Please ❤ this if you like it! */
+/* Style obtained from https://codepen.io/ig_design/pen/omQXoQ by Ivan Groziic */
 
 
 (function($) { "use strict";
