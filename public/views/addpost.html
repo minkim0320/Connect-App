@@ -1,0 +1,62 @@
+<div class="container addpost-wrapper">
+    <br>
+    <h2 class="form-title">Information</h2>
+    <br>
+    <form class="addpost-form" ng-submit="addPost()">
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" placeholder="Title" ng-model="newpost.title" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Your Name</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" placeholder="Name" ng-model="newpost.creator" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Contact Info</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" placeholder="Phone Number / Email / Social Media" ng-model="newpost.contact" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text">Description</span>
+            </div>
+            <textarea class="form-control" aria-label="description" placeholder="Describe the project" ng-model="newpost.description"></textarea>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text">Who we are looking for</span>
+            </div>
+            <textarea class="form-control" aria-label="description" placeholder="Who is the team's ideal candidate" ng-model="newpost.memberdesc"></textarea>
+        </div>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">How many members?</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="current member / total member expected" ng-model="newpost.nummembers">
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text">Team Description</span>
+            </div>
+            <textarea class="form-control" aria-label="description" placeholder="We are..." ng-model="newpost.teamdesc"></textarea>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text">Category</span>
+            </div>
+            <select name="singleSelect select-wrapper" ng-model="newpost.category">
+                <option ng-repeat="category in categories" ng-value="category">{{category}}</option>
+            </select><br>
+        </div>
+        <br>
+        <br>
+        <div class="add-button-wrapper">
+            <button type="submit" class="btn btn-outline-secondary add-button">Upload</button>
+        </div>
+    </form>
+</div>

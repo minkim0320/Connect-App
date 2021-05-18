@@ -1,0 +1,24 @@
+<div class="single-post container">
+    <h1>{{post.title}}</h1>
+    <img src="{{post.picurl}}" class="img-display-single">
+    <div class="explanation">
+        <br>
+        <div>
+        <h2>Uploaded by:</h2>
+        <p class="desc-display">{{post.creator}}</p>
+        </div>
+        <h2>Description:</h2>        
+        <p class="desc-display">{{post.description}}</p>
+        <h2>Contact Info:</h2>        
+        <p class="desc-display">{{post.contact}}</p>
+        <h2>Who we are looking for:</h2> 
+        <p class="desc-display">{{post.memberdesc}}</p>
+        <h2>More about our current members:</h2> 
+        <p class="desc-display">{{post.teamdesc}}</p>
+        <h2>Number of members filled:</h2> 
+        <p class="desc-display">{{post.nummembers}}</p>
+    </div>
+    <br>
+    <button type="button" ng-click="removePostId()" class="btn btn-secondary">Delete Post</button>
+    <br>
+</div>
