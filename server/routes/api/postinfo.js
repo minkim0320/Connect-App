@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// DELETE api/items/:id
+// GET api/items/:id
 router.get('/:id', (req, res) => {
     console.log("received request for " + req.params.id);
     postInfo.findById(req.params.id)
